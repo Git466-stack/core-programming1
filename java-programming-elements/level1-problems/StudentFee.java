@@ -1,11 +1,20 @@
 import java.util.*;
 public class StudentFee {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int fee = sc.nextInt();
-        int   discountPercentge =  sc.nextInt();
-        double discount = (fee*discountPercentge)/100.00;
-        double finalfee = fee-discount;
-        System.out.println( "The discount is " + discount + "The final fee is " +  finalfee);
-    }
-}
+                // Given values
+                double fee = 125000; // Original fee
+                double discountPercent = 10; // Discount percentage
+        
+                // Calculate the discount amount
+                double discount = (fee * discountPercent) / 100;
+        
+                // Calculate the final discounted fee
+                double discountedFee = fee - discount;
+        
+                // Display the results
+                System.out.println("The discount amount is INR " + discount + " and final discounted fee is INR " + discountedFee);
+            }
+        }
+        
+    
+

@@ -1,11 +1,11 @@
-import java.util.*;
-public class Harryage{
+public class Harryage {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int currentyear = sc.nextInt();
-        int birthyear = sc.nextInt();
-        int ans = currentyear - birthyear;
-        System.out.println(ans);
-        
+        int birthYear = 2000; // Harry's birth year
+        int currentYear = 2024; // Current year
+
+        int age = currentYear - birthYear; // Calculate age
+
+        // Display the result
+        System.out.println("Harry's age in 2024 is " + age);
     }
 }
