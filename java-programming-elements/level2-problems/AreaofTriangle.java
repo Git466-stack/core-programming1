@@ -1,3 +1,4 @@
+// doubt 
 import java.util.*;
 public class AreaofTriangle {
     public static void main(String[] args) {

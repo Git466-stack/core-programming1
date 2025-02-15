@@ -1,14 +1,21 @@
 import java.util.*;
 public class BasicCalculator{
         public static void main(String[] args) {
+            // create a scanner object for taking user input 
             Scanner sc = new Scanner(System.in);
-            float number1 = sc.nextFloat();
-            float number2 = sc.nextFloat();
+            // Ask the user to input two floating -point number 
 
-            float addition = number1+number2;
-            float subtraction = number1-number2;
-            float multiplication = number1*number2;
-            float division = number1/number2;
+            System.out.println("Enter the first number : ");
+            double number1 = sc.nextDouble();
+            System.out.println("Enter the second number : ");
+            double  number2 = sc.nextDouble();
+            
+            // perform arithmetic operations
+
+            double addition = number1+number2;
+            double subtraction = number1-number2;
+            double multiplication = number1*number2;
+            double division = number1/number2;
 
             System.out.println("The addition of two numbers " + addition);
             System.out.println("The  subtraction of two number " + subtraction);
