@@ -18,7 +18,7 @@ public class BasicZaraBonus {
 
             if (salary[i] <= 0 || yearsOfService[i] < 0) {
                 System.out.println("Invalid input. Please re-enter data.");
-                i--; // Retry for this employee
+                i--; 
             }
         }
 
