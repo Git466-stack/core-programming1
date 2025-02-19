@@ -1,12 +1,12 @@
 public class SpringSeason {
     public static void main(String[] args) {
-        // Ensure the user provides month and day as command-line arguments
-        if (args.length < 2) {
+        // Check if the user provided exactly two arguments (month and day)
+        if (args.length != 2) {
             System.out.println("Usage: java SpringSeason <month> <day>");
             return;
         }
 
-        // Parse the input values
+        // Parse command-line arguments for month and day
         int month = Integer.parseInt(args[0]);
         int day = Integer.parseInt(args[1]);
 
@@ -18,18 +18,18 @@ public class SpringSeason {
         }
     }
 
-    // Method to determine if the given date is in the Spring season
+    
     public static boolean isSpringSeason(int month, int day) {
         if (month == 3 && day >= 20 && day <= 31) {
             return true; // March 20 to March 31
         } else if (month == 4 && day >= 1 && day <= 30) {
-            return true; // Entire April
+            return true; // April
         } else if (month == 5 && day >= 1 && day <= 31) {
-            return true; // Entire May
+            return true; // May
         } else if (month == 6 && day >= 1 && day <= 20) {
             return true; // June 1 to June 20
         } else {
-            return false; // Not in Spring season
+            return false; // Not within the Spring Season
         }
     }
 }
