@@ -50,7 +50,5 @@ public class SubstringComparison {
         System.out.println("Substring using charAt(): " + substringWithCharAt);
         System.out.println("Substring using built-in substring(): " + substringWithBuiltIn);
         System.out.println("Are the substrings equal? " + areEqual);
-
-        scanner.close();
     }
 }
